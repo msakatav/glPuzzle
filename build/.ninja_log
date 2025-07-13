@@ -1,0 +1,11 @@
+# ninja log v7
+13	176	7740468733529382	CMakeFiles/glad.dir/src/gl.c.obj	c6f343894256be92
+176	262	7740468735168161	libglad.a	d374a000b268fbea
+14	1539	7740708417385063	CMakeFiles/game.dir/src/main.cpp.obj	5a9860d37356d66d
+1539	1810	7740708432639156	bin/game.exe	8f52001414a05217
+17	330	7740693465428716	CMakeFiles/game.dir/src/main_loop.cpp.obj	cbfe7b7ce321190
+14	293	7740694324244112	CMakeFiles/game.dir/src/shaders.cpp.obj	baa4dace79e59cae
+20	294	7740710147153451	CMakeFiles/game.dir/src/renderer.cpp.obj	47aa4ab270cef6c8
+14	100	7740711018421631	CMakeFiles/game.dir/src/main.cpp.obj	5a9860d37356d66d
+18	286	7740711018461625	CMakeFiles/game.dir/src/window.cpp.obj	61fdd80158531689
+287	387	7740711021146666	bin/game.exe	727622ff5db9de18

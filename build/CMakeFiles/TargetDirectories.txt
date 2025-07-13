@@ -1,0 +1,4 @@
+C:/Users/geizy/Desktop/puzzlegame/c_puzzle/build/CMakeFiles/glad.dir
+C:/Users/geizy/Desktop/puzzlegame/c_puzzle/build/CMakeFiles/game.dir
+C:/Users/geizy/Desktop/puzzlegame/c_puzzle/build/CMakeFiles/edit_cache.dir
+C:/Users/geizy/Desktop/puzzlegame/c_puzzle/build/CMakeFiles/rebuild_cache.dir
