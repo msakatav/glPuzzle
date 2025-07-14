@@ -2,20 +2,38 @@
 #define RENDERER_H
 
 #include <glad/gl.h>
+#include "game.h"
 
-// 三角形レンダラー関連
-void setupTriangle();
-void renderTriangle();
-void cleanupTriangle();
+// ゲームボード描画関連
+void setupGameRenderer();
+void renderGame();
+void cleanupGameRenderer();
 
 // シェーダー関連
 unsigned int compileShader(unsigned int type, const char* source);
 void setupShaders();
 void cleanupShaders();
 
+// テクスチャ関連
+void setupTextures();
+void cleanupTextures();
+unsigned int loadTexture(const char* path);
+void renderTexture(unsigned int texture, float x1, float y1, float x2, float y2);
+
+// テキスト描画関連
+void setupTextRenderer();
+void cleanupTextRenderer();
+void renderChar(char c, float x, float y, float scale, float color[3]);
+void renderText(const char* text, float x, float y, float scale, float color[3]);
+void renderScore(int redScore, int blueScore);
+void renderGameOverScreen(Player winner);
+
 // グローバル変数の宣言
-extern unsigned int VAO, VBO, shaderProgram;
+extern unsigned int shaderProgram;
+extern unsigned int textureShaderProgram;
 extern const char* vertexShaderSource;
 extern const char* fragmentShaderSource;
+extern const char* textureVertexShaderSource;
+extern const char* textureFragmentShaderSource;
 
 #endif // RENDERER_H

@@ -31,6 +31,16 @@ rule C_STATIC_LIBRARY_LINKER__glad_
 
 
 #############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__game_unscanned_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}C:\msys64\ucrt64\bin\cc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
 # Rule for compiling CXX files.
 
 rule CXX_COMPILER__game_unscanned_

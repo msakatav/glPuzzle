@@ -9,7 +9,7 @@ include_directories(include)
 add_library(glad src/gl.c)
 target_include_directories(glad PUBLIC include)
 
-file(GLOB SRC_FILES src/*.cpp)
+file(GLOB SRC_FILES src/*.cpp src/*.c)
 add_executable(game ${SRC_FILES})
 
 target_link_libraries(game glad glfw3 opengl32)

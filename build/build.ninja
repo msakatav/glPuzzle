@@ -74,6 +74,19 @@ build libglad.a: C_STATIC_LIBRARY_LINKER__glad_ CMakeFiles/glad.dir/src/gl.c.obj
 
 build cmake_object_order_depends_target_game: phony || cmake_object_order_depends_target_glad
 
+build CMakeFiles/game.dir/src/game.cpp.obj: CXX_COMPILER__game_unscanned_ C$:/Users/geizy/Desktop/puzzlegame/c_puzzle/src/game.cpp || cmake_object_order_depends_target_game
+  DEP_FILE = CMakeFiles\game.dir\src\game.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/geizy/Desktop/puzzlegame/c_puzzle/include
+  OBJECT_DIR = CMakeFiles\game.dir
+  OBJECT_FILE_DIR = CMakeFiles\game.dir\src
+
+build CMakeFiles/game.dir/src/gl.c.obj: C_COMPILER__game_unscanned_ C$:/Users/geizy/Desktop/puzzlegame/c_puzzle/src/gl.c || cmake_object_order_depends_target_game
+  DEP_FILE = CMakeFiles\game.dir\src\gl.c.obj.d
+  INCLUDES = -IC:/Users/geizy/Desktop/puzzlegame/c_puzzle/include
+  OBJECT_DIR = CMakeFiles\game.dir
+  OBJECT_FILE_DIR = CMakeFiles\game.dir\src
+
 build CMakeFiles/game.dir/src/main.cpp.obj: CXX_COMPILER__game_unscanned_ C$:/Users/geizy/Desktop/puzzlegame/c_puzzle/src/main.cpp || cmake_object_order_depends_target_game
   DEP_FILE = CMakeFiles\game.dir\src\main.cpp.obj.d
   FLAGS = -std=gnu++17
@@ -83,6 +96,19 @@ build CMakeFiles/game.dir/src/main.cpp.obj: CXX_COMPILER__game_unscanned_ C$:/Us
 
 build CMakeFiles/game.dir/src/renderer.cpp.obj: CXX_COMPILER__game_unscanned_ C$:/Users/geizy/Desktop/puzzlegame/c_puzzle/src/renderer.cpp || cmake_object_order_depends_target_game
   DEP_FILE = CMakeFiles\game.dir\src\renderer.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -IC:/Users/geizy/Desktop/puzzlegame/c_puzzle/include
+  OBJECT_DIR = CMakeFiles\game.dir
+  OBJECT_FILE_DIR = CMakeFiles\game.dir\src
+
+build CMakeFiles/game.dir/src/stb_image.c.obj: C_COMPILER__game_unscanned_ C$:/Users/geizy/Desktop/puzzlegame/c_puzzle/src/stb_image.c || cmake_object_order_depends_target_game
+  DEP_FILE = CMakeFiles\game.dir\src\stb_image.c.obj.d
+  INCLUDES = -IC:/Users/geizy/Desktop/puzzlegame/c_puzzle/include
+  OBJECT_DIR = CMakeFiles\game.dir
+  OBJECT_FILE_DIR = CMakeFiles\game.dir\src
+
+build CMakeFiles/game.dir/src/stb_image_impl.cpp.obj: CXX_COMPILER__game_unscanned_ C$:/Users/geizy/Desktop/puzzlegame/c_puzzle/src/stb_image_impl.cpp || cmake_object_order_depends_target_game
+  DEP_FILE = CMakeFiles\game.dir\src\stb_image_impl.cpp.obj.d
   FLAGS = -std=gnu++17
   INCLUDES = -IC:/Users/geizy/Desktop/puzzlegame/c_puzzle/include
   OBJECT_DIR = CMakeFiles\game.dir
@@ -103,7 +129,7 @@ build CMakeFiles/game.dir/src/window.cpp.obj: CXX_COMPILER__game_unscanned_ C$:/
 #############################################
 # Link the executable bin\game.exe
 
-build bin/game.exe: CXX_EXECUTABLE_LINKER__game_ CMakeFiles/game.dir/src/main.cpp.obj CMakeFiles/game.dir/src/renderer.cpp.obj CMakeFiles/game.dir/src/window.cpp.obj | libglad.a || libglad.a
+build bin/game.exe: CXX_EXECUTABLE_LINKER__game_ CMakeFiles/game.dir/src/game.cpp.obj CMakeFiles/game.dir/src/gl.c.obj CMakeFiles/game.dir/src/main.cpp.obj CMakeFiles/game.dir/src/renderer.cpp.obj CMakeFiles/game.dir/src/stb_image.c.obj CMakeFiles/game.dir/src/stb_image_impl.cpp.obj CMakeFiles/game.dir/src/window.cpp.obj | libglad.a || libglad.a
   LINK_LIBRARIES = libglad.a  -lglfw3  -lopengl32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\game.dir
   POST_BUILD = cd .
