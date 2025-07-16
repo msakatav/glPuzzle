@@ -3,6 +3,13 @@
 
 #include <glad/gl.h>
 #include "game.h"
+#include "renderer.h"
+#include <iostream>
+#include <cstring>
+#include <stdio.h>
+#include <GLFW/glfw3.h>
+
+#include "stb_image.h"
 
 // ゲームボード描画関連
 void setupGameRenderer();
@@ -35,5 +42,13 @@ extern const char* vertexShaderSource;
 extern const char* fragmentShaderSource;
 extern const char* textureVertexShaderSource;
 extern const char* textureFragmentShaderSource;
+extern unsigned int gameVAO, gameVBO;
+extern unsigned int textureVAO, textureVBO;
+extern unsigned int plusOneTexture, minusOneTexture, plusTwoTexture;
+
+// テキスト描画用の変数
+extern unsigned int textVAO, textVBO;
+extern unsigned int digitTextures[10];  // 0-9の数字テクスチャ
+
 
 #endif // RENDERER_H
